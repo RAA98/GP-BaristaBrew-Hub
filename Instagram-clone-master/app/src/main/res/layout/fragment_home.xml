@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentTop="true"
+        android:id="@+id/FragmentHome_toolbar"
+        android:background="#6f4e37"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        android:elevation="6dp"
+        android:visibility="gone"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/linearlayout"
+            android:weightSum="100">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/camera"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:padding="5dp"
+                android:visibility="gone"
+                app:tint="@color/textcolor"
+                android:id="@+id/camera"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:text="Barista App"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/send"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:padding="7dp"
+                android:visibility="gone"
+                app:tint="@color/textcolor"
+                android:id="@+id/FragmentHome_msg"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/FragmentHome_stories_bar"
+        android:layout_below="@+id/FragmentHome_toolbar">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:visibility="gone"
+                android:id="@+id/FragmentHome_story_recyclerView"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#3B3933"
+        android:id="@+id/image"
+        android:src="@drawable/g1"
+        android:layout_below="@+id/FragmentHome_stories_bar"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:layout_below="@id/image"
+        android:orientation="horizontal"
+        android:id="@+id/FragmentHome_postListView"
+       />
+
+
+
+    <TextView
+        android:id="@+id/image2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="7pt"
+        android:layout_marginStart="12dp"
+        android:layout_below="@id/FragmentHome_postListView"
+        android:layout_alignParentStart="true"
+        android:text="Recomandtion" />
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:id="@+id/f1"
+        android:src="@drawable/r1"
+        android:layout_below="@id/image2"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="12dp"
+        />
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:id="@+id/f2"
+        android:src="@drawable/r2"
+        android:layout_below="@id/image2"
+        android:layout_toEndOf="@id/f1"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="12dp"
+        />
+
+
+
+
+
+
+</RelativeLayout>

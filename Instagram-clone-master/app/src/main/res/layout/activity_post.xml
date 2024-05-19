@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Post.PostActivity">
+
+    <Toolbar
+        android:id="@+id/post_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#6f4e37"
+        android:elevation="6dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+        <LinearLayout
+            android:id="@+id/linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/back_from_post"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="5dp"
+                android:src="@drawable/ic_back_arrow"
+                app:tint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:text="New Recipe"
+
+                android:textColor="#6f4e37"
+                android:textSize="27sp" />
+
+            <Button
+                android:id="@+id/post_now"
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="5dp"
+                android:text="POST"
+                android:layout_margin="12dp"
+                android:textColor="@color/white"
+                android:background="@drawable/rounded_button_bg"
+                android:src="@drawable/ic_check_right"
+                android:layout_marginEnd="10dp"
+                app:tint="@color/sky_blue" />
+
+        </LinearLayout>
+
+    </Toolbar>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/added_caption"
+        android:hint="Your Recipe Name"
+       android:paddingTop="20dp"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textColor="@color/white"
+        android:background="#B19F92"
+        android:paddingBottom="20dp"
+
+
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="55dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear1"
+        android:layout_below="@+id/added_caption"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:padding="15dp">
+
+
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textColor="@color/white"
+            android:background="#B19F92"
+            android:layout_weight="75"
+            android:layout_gravity="center_vertical"
+            android:hint="Your Recipe Ingredien..."
+      android:paddingBottom="54dp"
+            android:paddingTop="54dp"
+            android:layout_marginStart="10dp"/>
+
+        <ImageView
+            android:id="@+id/added_image"
+            android:layout_width="50dp"
+            android:layout_height="150dp"
+            android:layout_weight="25" />
+
+    </LinearLayout>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:id="@+id/hr"
+        android:background="@color/lightgray"
+        android:layout_marginTop="4dp"
+        android:layout_below="@id/linear1"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/added_tags"
+        android:hint="Description"
+
+
+       android:paddingTop="30dp"
+        android:paddingBottom="24dp"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textColor="@color/white"
+        android:background="#B19F92"
+        android:layout_below="@+id/hr"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="15dp"/>
+
+
+
+
+
+
+</RelativeLayout>

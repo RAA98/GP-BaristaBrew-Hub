@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "531768490120",
+    "firebase_url": "https://barista24-dd1cc-default-rtdb.firebaseio.com/",
+    "project_id": "barista24-dd1cc",
+    "storage_bucket": "barista24-dd1cc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:531768490120:android:11d54a51bb1093ea6f073d",
+        "android_client_info": {
+          "package_name": "my.insta.androrealm"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4_qFkZk-eFp_LwyaZ6ViRwA52l_ca-f0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
